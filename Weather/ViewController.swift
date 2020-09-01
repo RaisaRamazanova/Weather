@@ -12,6 +12,7 @@ class ViewController: UIViewController, UISearchResultsUpdating, UITableViewData
     
     var timer = Timer()
     var dataIsReady:Bool = false
+    
     var offerModel:OfferModel! {
         didSet {
             self.contentView.tableView.reloadData()
