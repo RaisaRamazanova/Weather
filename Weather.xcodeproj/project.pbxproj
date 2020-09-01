@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		593DECFE24FEAA6E00D66F1D /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 593DECFD24FEAA6E00D66F1D /* CustomTableViewCell.xib */; };
+		593DED0024FEBACA00D66F1D /* CustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 593DECFF24FEBACA00D66F1D /* CustomView.xib */; };
 		59ABE69B24E5809900420EC8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59ABE69A24E5809900420EC8 /* AppDelegate.swift */; };
 		59ABE69F24E5809A00420EC8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59ABE69E24E5809A00420EC8 /* ViewController.swift */; };
 		59ABE6A224E5809A00420EC8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59ABE6A024E5809A00420EC8 /* Main.storyboard */; };
@@ -40,6 +41,7 @@
 
 /* Begin PBXFileReference section */
 		593DECFD24FEAA6E00D66F1D /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
+		593DECFF24FEBACA00D66F1D /* CustomView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomView.xib; sourceTree = "<group>"; };
 		59ABE69724E5809900420EC8 /* Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59ABE69A24E5809900420EC8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		59ABE69E24E5809A00420EC8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 				59ABE6A524E580C900420EC8 /* LaunchScreen.storyboard */,
 				59ABE6A824E580C900420EC8 /* Info.plist */,
 				59ABE6D424E5B7D200420EC8 /* MainView.swift */,
+				593DECFF24FEBACA00D66F1D /* CustomView.xib */,
 			);
 			path = Weather;
 			sourceTree = "<group>";
@@ -249,6 +252,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				59ABE6A724E580C900420EC8 /* LaunchScreen.storyboard in Resources */,
+				593DED0024FEBACA00D66F1D /* CustomView.xib in Resources */,
 				59ABE6A424E580C800420EC8 /* Assets.xcassets in Resources */,
 				593DECFE24FEAA6E00D66F1D /* CustomTableViewCell.xib in Resources */,
 				59ABE6A224E5809A00420EC8 /* Main.storyboard in Resources */,

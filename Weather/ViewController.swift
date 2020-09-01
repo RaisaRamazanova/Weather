@@ -18,17 +18,17 @@ class ViewController: UIViewController, UISearchResultsUpdating, UITableViewData
         }
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        self.setupNavigationBar()
-        self.contentView.tableView.dataSource = self
-    }
-    
     fileprivate var contentView: MainView {
         return self.view as! MainView
     }
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        self.setupNavigationBar()
+        (self.view as! MainView).tableView.dataSource = self
+    }
+        
     fileprivate func setupNavigationBar() {
         self.navigationItem.title = "Weather Application"
         self.navigationController?.navigationBar.prefersLargeTitles = true
