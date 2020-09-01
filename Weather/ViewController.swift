@@ -11,11 +11,8 @@ import UIKit
 class ViewController: UIViewController, UISearchResultsUpdating, UITableViewDataSource {
     
     var timer = Timer()
-    fileprivate var contentView: MainView {
-        return self.view as! MainView
-    }
-    
-    var offerModel:OfferModel? {
+    var dataIsReady:Bool = false
+    var offerModel:OfferModel! {
         didSet {
             self.contentView.tableView.reloadData()
         }
@@ -26,6 +23,10 @@ class ViewController: UIViewController, UISearchResultsUpdating, UITableViewData
         
         self.setupNavigationBar()
         self.contentView.tableView.dataSource = self
+    }
+    
+    fileprivate var contentView: MainView {
+        return self.view as! MainView
     }
     
     fileprivate func setupNavigationBar() {
@@ -47,7 +48,10 @@ class ViewController: UIViewController, UISearchResultsUpdating, UITableViewData
         if city.count > 1 {
             timer = Timer.scheduledTimer(withTimeInterval: 1.5, repeats: false, block: { (timer) in
                 NetworkManager.shared.getWeather(city: city, result: { (model) in
-                    self.offerModel = model
+                    if model != nil {
+                        self.dataIsReady = true
+                        self.offerModel = model
+                    }
                 })
             })
         }
@@ -55,11 +59,22 @@ class ViewController: UIViewController, UISearchResultsUpdating, UITableViewData
     
     //MARK: - UITableViewDataSource
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if dataIsReady {
         return self.offerModel!.weather!.count
+        }else{
+            return 0
+        }
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "CustomTableViewCell") as! CustomTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CustomTableViewCell")  as! CustomTableViewCell
+    
+        cell.cityLabel.text = self.offerModel.name
+        cell.timeLabel.text = self.offerModel!.timezone
+        cell.minTempLabel.text = self.offerModel.main.temp_min!.description
+        cell.maxTempLabel.text = self.offerModel.main.temp_max!.description
+        cell.tempLabel.text = self.offerModel.main.temp!.description
+        
         
         return cell
     }

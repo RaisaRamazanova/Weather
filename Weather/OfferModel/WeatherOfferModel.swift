@@ -8,7 +8,7 @@
 
 import Foundation
 
-class ListOfferModel: Codable  {
+class WeatherOfferModel: Codable  {
     var id: Int
     var main: String
     var description: String

@@ -10,7 +10,8 @@ import Foundation
 
 class OfferModel: Codable {
     var cod: Int
-    var name: String?
+    var timezone: String?
+    var name: String
     var main: MainOfferModel
-    var weather: [ListOfferModel]?
+    var weather: [WeatherOfferModel]?
 }
