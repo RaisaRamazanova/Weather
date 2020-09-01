@@ -26,8 +26,7 @@ class MainView: UIView {
     }
     
     fileprivate func setupConstraints() {
-        self.tableView.translatesAutoresizingMaskIntoConstraints = false
-        
+        self.tableView.translatesAutoresizingMaskIntoConstraints = false        
         self.tableView.leftAnchor.constraint(equalTo: self.leftAnchor).isActive = true
         self.tableView.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
         self.tableView.topAnchor.constraint(equalTo: self.topAnchor).isActive = true

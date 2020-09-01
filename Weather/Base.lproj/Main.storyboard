@@ -23,10 +23,10 @@
             </objects>
             <point key="canvasLocation" x="1042.0289855072465" y="115.84821428571428"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Main-->
         <scene sceneID="Hgf-L8-2tr">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rBA-7v-oeL" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rBA-7v-oeL" customClass="main" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="IH2-Z6-XRa">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>

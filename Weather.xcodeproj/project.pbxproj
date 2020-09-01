@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		593DECFE24FEAA6E00D66F1D /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 593DECFD24FEAA6E00D66F1D /* CustomTableViewCell.xib */; };
 		59ABE69B24E5809900420EC8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59ABE69A24E5809900420EC8 /* AppDelegate.swift */; };
 		59ABE69F24E5809A00420EC8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59ABE69E24E5809A00420EC8 /* ViewController.swift */; };
 		59ABE6A224E5809A00420EC8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59ABE6A024E5809A00420EC8 /* Main.storyboard */; };
@@ -18,7 +19,6 @@
 		59ABE6D324E5861A00420EC8 /* MainOfferModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59ABE6D224E5861A00420EC8 /* MainOfferModel.swift */; };
 		59ABE6D524E5B7D200420EC8 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59ABE6D424E5B7D200420EC8 /* MainView.swift */; };
 		59DBEB4124F6C8E600DCA536 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59DBEB4024F6C8E600DCA536 /* CustomTableViewCell.swift */; };
-		59DBEB4324F6C98E00DCA536 /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59DBEB4224F6C98E00DCA536 /* CustomTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		593DECFD24FEAA6E00D66F1D /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
 		59ABE69724E5809900420EC8 /* Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59ABE69A24E5809900420EC8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		59ABE69E24E5809A00420EC8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,7 +55,6 @@
 		59ABE6D224E5861A00420EC8 /* MainOfferModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainOfferModel.swift; sourceTree = "<group>"; };
 		59ABE6D424E5B7D200420EC8 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		59DBEB4024F6C8E600DCA536 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
-		59DBEB4224F6C98E00DCA536 /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +103,7 @@
 		59ABE69924E5809900420EC8 /* Weather */ = {
 			isa = PBXGroup;
 			children = (
+				59ABE6CA24E5834D00420EC8 /* NetworkManager */,
 				59DBEB3F24F6C88F00DCA536 /* UITableViewCell */,
 				59ABE6CD24E584C500420EC8 /* OfferModel */,
 				59ABE69A24E5809900420EC8 /* AppDelegate.swift */,
@@ -130,7 +131,6 @@
 				59ABE6D024E585BE00420EC8 /* WeatherOfferModel.swift */,
 				59ABE6CE24E5850D00420EC8 /* OfferModel.swift */,
 				59ABE6D224E5861A00420EC8 /* MainOfferModel.swift */,
-				59ABE6CA24E5834D00420EC8 /* NetworkManager */,
 			);
 			path = OfferModel;
 			sourceTree = "<group>";
@@ -139,7 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				59DBEB4024F6C8E600DCA536 /* CustomTableViewCell.swift */,
-				59DBEB4224F6C98E00DCA536 /* CustomTableViewCell.xib */,
+				593DECFD24FEAA6E00D66F1D /* CustomTableViewCell.xib */,
 			);
 			path = UITableViewCell;
 			sourceTree = "<group>";
@@ -250,7 +250,7 @@
 			files = (
 				59ABE6A724E580C900420EC8 /* LaunchScreen.storyboard in Resources */,
 				59ABE6A424E580C800420EC8 /* Assets.xcassets in Resources */,
-				59DBEB4324F6C98E00DCA536 /* CustomTableViewCell.xib in Resources */,
+				593DECFE24FEAA6E00D66F1D /* CustomTableViewCell.xib in Resources */,
 				59ABE6A224E5809A00420EC8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
